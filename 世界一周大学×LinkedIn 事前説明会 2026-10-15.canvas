@@ -1,0 +1,626 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 旅と挑戦を、次の出会いへ。\n\n**世界一周大学 × LinkedIn**\nオンライン事前説明会\n\n2026年10月15日（木）21:00–22:00\nNavigator｜山元ライキ",
+      "x": 100,
+      "y": 0,
+      "width": 620,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "goal",
+      "type": "text",
+      "text": "## 今日のゴール\n\n1. LinkedInが**どんな場所か**わかる\n2. 自分にとっての**使い道**が見える\n3. 10月26日のイベントを知る\n4. その場で**アカウントを作る**\n\n→ 今日は「使いこなす」より、\n**最初の一歩を踏み出す日**",
+      "x": 800,
+      "y": 0,
+      "width": 500,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "flow",
+      "type": "text",
+      "text": "## 60分の流れ\n\n| 時間 | 内容 |\n|---|---|\n| 21:00 | オープニング |\n| 21:05 | LinkedInとは |\n| 21:15 | 本社訪問・つながり |\n| 21:22 | ブランド化の3要素 |\n| 21:30 | 10/26イベント紹介 |\n| 21:38 | アカウント登録 |\n| 21:55 | Q&A・締め |",
+      "x": 1380,
+      "y": 0,
+      "width": 470,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "part1",
+      "type": "text",
+      "text": "## Part 1｜まず聞かせてください\n\n**21:00–21:05**",
+      "x": 0,
+      "y": 400,
+      "width": 1200,
+      "height": 90,
+      "color": "3"
+    },
+    {
+      "id": "poll1",
+      "type": "text",
+      "text": "### チャットで教えてください\n\nLinkedInを使ったことはありますか？\n\n**A** 名前だけ知っている\n**B** アカウントはある\n**C** ときどき見る\n**D** 投稿・仕事探しで使っている",
+      "x": 80,
+      "y": 530,
+      "width": 470,
+      "height": 300,
+      "color": "1"
+    },
+    {
+      "id": "poll2",
+      "type": "text",
+      "text": "### もうひとつ\n\n世界一周大学で経験したことで、\n**誰かに話したい挑戦**はありますか？\n\n旅／フィールドワーク／ボランティア\nプロジェクト／出会い／失敗と学び\n\n→ それがLinkedInの素材になります",
+      "x": 610,
+      "y": 530,
+      "width": 500,
+      "height": 300,
+      "color": "1"
+    },
+    {
+      "id": "part2",
+      "type": "text",
+      "text": "## Part 2｜LinkedInって、どんなSNS？\n\n**21:05–21:15**",
+      "x": 0,
+      "y": 920,
+      "width": 1200,
+      "height": 90,
+      "color": "5"
+    },
+    {
+      "id": "what",
+      "type": "text",
+      "text": "### ひとことで言うと\n\n# 仕事・キャリアをきっかけに\n# 人と人がつながるSNS\n\n特別な肩書ができてからではなく、\n**今の経験や挑戦を残す場所**",
+      "x": 80,
+      "y": 1050,
+      "width": 500,
+      "height": 290,
+      "color": "5"
+    },
+    {
+      "id": "compare",
+      "type": "text",
+      "text": "### 身近なSNSとの違い\n\n**Instagram**\n日常・写真・好きなもの\n\n**X**\n意見・ニュース・リアルタイム\n\n**LinkedIn**\n経験・実績・仕事・信頼・つながり",
+      "x": 640,
+      "y": 1050,
+      "width": 440,
+      "height": 290,
+      "color": "5"
+    },
+    {
+      "id": "four",
+      "type": "text",
+      "text": "### LinkedInでできる4つのこと\n\n1. **PROFILE**｜経験を見える形にする\n2. **CONNECT**｜会いたい人とつながる\n3. **SHARE**｜活動や学びを発信する\n4. **CHANCE**｜仕事や挑戦の機会を得る",
+      "x": 1140,
+      "y": 1050,
+      "width": 500,
+      "height": 290,
+      "color": "5"
+    },
+    {
+      "id": "sekadai-fit",
+      "type": "text",
+      "text": "### 世界一周大学と相性がいい理由\n\n旅やフィールドワークは、\n単なる「思い出」ではありません。\n\n- 何に出会った？\n- 何を感じた？\n- 何を考えた？\n- どう動いた？\n- 次に何をしたい？\n\nこの答えが、あなたの**物語とキャリア**になる。",
+      "x": 1700,
+      "y": 1050,
+      "width": 500,
+      "height": 340,
+      "color": "3"
+    },
+    {
+      "id": "part3",
+      "type": "text",
+      "text": "## Part 3｜本社訪問と、つながりから生まれた機会\n\n**21:15–21:22**",
+      "x": 0,
+      "y": 1480,
+      "width": 1200,
+      "height": 90,
+      "color": "4"
+    },
+    {
+      "id": "raiki",
+      "type": "text",
+      "text": "### 山元ライキ\n\n- LinkedIn **7,200+**\n- 異業種・職種の方 **200人以上**と対話\n- LinkedIn**本社**・**日本オフィス**訪問\n- 石坂誠さんとシアトル・SF企業訪問\n- LinkedIn Student Clubとイベント協力\n- 自分のプロダクトを景品として提供\n\nポートフォリオ\nhttps://raiki-portfolio2.vercel.app/",
+      "x": 80,
+      "y": 1610,
+      "width": 470,
+      "height": 390,
+      "color": "4"
+    },
+    {
+      "id": "story",
+      "type": "text",
+      "text": "### LinkedIn本社で学んだこと\n\nサンフランシスコ企業訪問の締めは\n**LinkedIn HQ**。\n\n- 学歴より**学習歴**\n- Keep doing, don't settle\n- Be ready anytime\n- **運 ＝ 準備の質 × 機会の数**\n- Why you?\n- 「なりたい」より「ありたい」\n\n投稿：\nlinkedin.com/posts/raiki-yamamoto-047106277",
+      "x": 620,
+      "y": 1610,
+      "width": 500,
+      "height": 460,
+      "color": "4"
+    },
+    {
+      "id": "formula",
+      "type": "text",
+      "text": "### 僕が信じていること\n\n# 運 ＝ 準備の質 × 機会の数\n\nLinkedInは、\n**機会の数**を増やせる。\n\nプロフィールと日々の挑戦は、\n機会が来たときの\n**準備の質**を高めてくれる。",
+      "x": 1190,
+      "y": 1610,
+      "width": 500,
+      "height": 390,
+      "color": "6"
+    },
+    {
+      "id": "question",
+      "type": "text",
+      "text": "### もし、つながれるなら？\n\n今、話を聞いてみたい人は\nどんな人ですか？\n\n- 行きたい業界の先輩\n- 世界で働く人\n- 同じテーマに挑戦する仲間\n- メンター\n- 一緒にプロジェクトをする人\n\n→ チャットに1つ書いてみよう",
+      "x": 2310,
+      "y": 1610,
+      "width": 470,
+      "height": 390,
+      "color": "1"
+    },
+    {
+      "id": "friends",
+      "type": "text",
+      "text": "### 石坂さん・Student Club\n\n**石坂 誠（Makoto Ishizaka）さん**\nhttps://www.linkedin.com/in/makoto1118/\n\nLinkedInの使い方を一番教えてくれた人。\n本社・日本オフィス。10/26は一緒に講演予定。\n\n**LinkedIn Student Club**\n学生向けイベントを重ね、\n自分のプロダクトを景品として出してもらった。\n\nオンラインのつながりが、\nリアルな共創になる。",
+      "x": 1760,
+      "y": 1610,
+      "width": 480,
+      "height": 430,
+      "color": "4"
+    },
+    {
+      "id": "img-hq1",
+      "type": "file",
+      "file": "03. Personal/output/世界一周大学×LinkedIn 事前説明会 2026-10-15/photos/linkedin-hq-ishizaka.png",
+      "x": 80,
+      "y": 2080,
+      "width": 360,
+      "height": 240
+    },
+    {
+      "id": "img-hq2",
+      "type": "file",
+      "file": "03. Personal/output/世界一周大学×LinkedIn 事前説明会 2026-10-15/photos/linkedin-hq-raiki.png",
+      "x": 460,
+      "y": 2080,
+      "width": 360,
+      "height": 240
+    },
+    {
+      "id": "img-hq3",
+      "type": "file",
+      "file": "03. Personal/output/世界一周大学×LinkedIn 事前説明会 2026-10-15/photos/linkedin-hq-group.png",
+      "x": 840,
+      "y": 2080,
+      "width": 360,
+      "height": 240
+    },
+    {
+      "id": "brand",
+      "type": "text",
+      "text": "### ブランド化は、盛ることではない\n\n**21:22–21:30**\n\n1時間ですべては完成させない。\n今日は3つだけ見えるようにする。\n\n**WHO** 何者か\n**STORY** 何をしてきたか\n**NEXT** 何をしたいか\n\n例：https://raiki-portfolio2.vercel.app/",
+      "x": 1240,
+      "y": 2080,
+      "width": 500,
+      "height": 340,
+      "color": "5"
+    },
+    {
+      "id": "part4",
+      "type": "text",
+      "text": "## Part 4｜10月26日、LinkedInオフィスへ\n\n**21:30–21:38**",
+      "x": 0,
+      "y": 2540,
+      "width": 1200,
+      "height": 90,
+      "color": "2"
+    },
+    {
+      "id": "event",
+      "type": "text",
+      "text": "# 10.26 MON\n\n## 19:30–21:30\n\n世界一周大学 × LinkedIn Japan\n六本木・東京ミッドタウン\n\n**形式**\nオフィス来場＋オンライン予定\n\n**共演**\n石坂誠（Makoto Ishizaka）さん\nhttps://www.linkedin.com/in/makoto1118/\n× 山元ライキ",
+      "x": 80,
+      "y": 2670,
+      "width": 500,
+      "height": 390,
+      "color": "2"
+    },
+    {
+      "id": "event-content",
+      "type": "text",
+      "text": "### 当日予定していること\n\n**石坂誠さん × Raiki（共演）**\n- 日本オフィスで一緒に講演\n- つながり・キャリアのリアルな話\n\n**LinkedIn Japan**\n- 基礎講座・プロフィール\n- オフィスツアー的な体験\n\n**みんなで**\n- プロフィール整備\n- 次のアクションを決める\n\n写真：`photos/linkedin-japan-office-visit.jpg`",
+      "x": 650,
+      "y": 2670,
+      "width": 500,
+      "height": 430,
+      "color": "2"
+    },
+    {
+      "id": "condition",
+      "type": "text",
+      "text": "### 参加条件\n\n# LinkedInアカウントを\n# 作成済みであること\n\nだから今日、\nこのあと一緒に登録します。\n\n登録だけで終わらず、\n10月26日に次の一歩へ。",
+      "x": 1220,
+      "y": 2670,
+      "width": 500,
+      "height": 390,
+      "color": "6"
+    },
+    {
+      "id": "img-jp-office",
+      "type": "file",
+      "file": "03. Personal/output/世界一周大学×LinkedIn 事前説明会 2026-10-15/photos/linkedin-japan-office-visit.jpg",
+      "x": 80,
+      "y": 3140,
+      "width": 420,
+      "height": 300
+    },
+    {
+      "id": "img-jp-reception",
+      "type": "file",
+      "file": "03. Personal/output/世界一周大学×LinkedIn 事前説明会 2026-10-15/photos/linkedin-japan-office-reception.jpg",
+      "x": 530,
+      "y": 3140,
+      "width": 420,
+      "height": 240
+    },
+    {
+      "id": "img-jp-midtown",
+      "type": "file",
+      "file": "03. Personal/output/世界一周大学×LinkedIn 事前説明会 2026-10-15/photos/linkedin-japan-midtown-exterior.jpg",
+      "x": 980,
+      "y": 3140,
+      "width": 420,
+      "height": 240
+    },
+    {
+      "id": "part5",
+      "type": "text",
+      "text": "## Part 5｜みんなでアカウントを作ろう\n\n**21:38–21:55**",
+      "x": 0,
+      "y": 3220,
+      "width": 1200,
+      "height": 90,
+      "color": "3"
+    },
+    {
+      "id": "prepare",
+      "type": "text",
+      "text": "### まず準備\n\n- パソコンまたはスマートフォン\n- 登録に使うメールアドレス\n- 自分の名前（ローマ字も）\n- 現在の学校・仕事\n\n登録ページ：\nhttps://www.linkedin.com/signup",
+      "x": 80,
+      "y": 3350,
+      "width": 470,
+      "height": 330,
+      "color": "3"
+    },
+    {
+      "id": "steps",
+      "type": "text",
+      "text": "### 登録ステップ\n\n1. メールアドレスとパスワード\n2. 名前を入力\n3. 居住地域を入力\n4. 学校・職歴を入力\n5. メール認証\n6. プロフィール画面まで進む\n\n困ったらZoomのチャットへ。",
+      "x": 620,
+      "y": 3350,
+      "width": 470,
+      "height": 350,
+      "color": "3"
+    },
+    {
+      "id": "profile",
+      "type": "text",
+      "text": "### 今日の最低ライン\n\n✅ アカウント登録\n\n✅ 名前・学校／仕事\n\n✅ 世界一周大学との関わりを追加\n\n余裕があれば：\n- 顔写真\n- 見出し\n- 自己紹介\n\n完璧に作らなくて大丈夫。",
+      "x": 1160,
+      "y": 3350,
+      "width": 470,
+      "height": 370,
+      "color": "5"
+    },
+    {
+      "id": "safety",
+      "type": "text",
+      "text": "### 最初に覚える安全ルール\n\n- 知らない人の依頼を急いで承認しない\n- 個人情報を載せすぎない\n- 怪しい求人・投資・副業DMに注意\n- パスワードを使い回さない\n- 違和感があれば誰かに相談する\n\nSNSは、便利さと安全をセットで。",
+      "x": 1700,
+      "y": 3350,
+      "width": 470,
+      "height": 370,
+      "color": "1"
+    },
+    {
+      "id": "part6",
+      "type": "text",
+      "text": "## Part 6｜Q&A・次の一歩\n\n**21:55–22:00**",
+      "x": 0,
+      "y": 3830,
+      "width": 1200,
+      "height": 90,
+      "color": "6"
+    },
+    {
+      "id": "qa",
+      "type": "text",
+      "text": "### 質問ありますか？\n\n- 登録で困ったところ\n- プロフィールに何を書く？\n- どんな人とつながる？\n- 10月26日のイベント\n\n小さな疑問でも大歓迎です。",
+      "x": 110,
+      "y": 3960,
+      "width": 470,
+      "height": 280,
+      "color": "1"
+    },
+    {
+      "id": "action",
+      "type": "text",
+      "text": "### 今日の次の一歩\n\n1. 登録完了をチャットで報告\n2. Raikiとコネクション\n3. プロフィールを少し整える\n4. 10月26日の案内を確認\n\n**今日作った入口を、\n次の出会いにつなげよう。**",
+      "x": 650,
+      "y": 3960,
+      "width": 500,
+      "height": 310,
+      "color": "6"
+    },
+    {
+      "id": "close",
+      "type": "text",
+      "text": "# 旅と挑戦を、次の出会いへ。\n\n今日はありがとうございました。\n\n**10月26日、LinkedInオフィスで\nまた会いましょう。**\n\nRaiki LinkedIn\nhttps://www.linkedin.com/in/raiki-yamamoto-047106277/",
+      "x": 1230,
+      "y": 3960,
+      "width": 620,
+      "height": 330,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "fromNode": "title",
+      "fromSide": "right",
+      "toNode": "goal",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e02",
+      "fromNode": "goal",
+      "fromSide": "right",
+      "toNode": "flow",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e03",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "part1",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "e04",
+      "fromNode": "part1",
+      "fromSide": "bottom",
+      "toNode": "poll1",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "e05",
+      "fromNode": "poll1",
+      "fromSide": "right",
+      "toNode": "poll2",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e06",
+      "fromNode": "poll2",
+      "fromSide": "bottom",
+      "toNode": "part2",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e07",
+      "fromNode": "part2",
+      "fromSide": "bottom",
+      "toNode": "what",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "e08",
+      "fromNode": "what",
+      "fromSide": "right",
+      "toNode": "compare",
+      "toSide": "left",
+      "color": "5"
+    },
+    {
+      "id": "e09",
+      "fromNode": "compare",
+      "fromSide": "right",
+      "toNode": "four",
+      "toSide": "left",
+      "color": "5"
+    },
+    {
+      "id": "e10",
+      "fromNode": "four",
+      "fromSide": "right",
+      "toNode": "sekadai-fit",
+      "toSide": "left",
+      "color": "3"
+    },
+    {
+      "id": "e11",
+      "fromNode": "sekadai-fit",
+      "fromSide": "bottom",
+      "toNode": "part3",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "e12",
+      "fromNode": "part3",
+      "fromSide": "bottom",
+      "toNode": "raiki",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "e13",
+      "fromNode": "raiki",
+      "fromSide": "right",
+      "toNode": "story",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e14",
+      "fromNode": "story",
+      "fromSide": "right",
+      "toNode": "formula",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e15",
+      "fromNode": "formula",
+      "fromSide": "right",
+      "toNode": "friends",
+      "toSide": "left",
+      "color": "4"
+    },
+    {
+      "id": "e15b",
+      "fromNode": "friends",
+      "fromSide": "right",
+      "toNode": "question",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e16",
+      "fromNode": "question",
+      "fromSide": "bottom",
+      "toNode": "part4",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e17",
+      "fromNode": "part4",
+      "fromSide": "bottom",
+      "toNode": "event",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "e18",
+      "fromNode": "event",
+      "fromSide": "right",
+      "toNode": "event-content",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "e19",
+      "fromNode": "event-content",
+      "fromSide": "right",
+      "toNode": "condition",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e20",
+      "fromNode": "condition",
+      "fromSide": "bottom",
+      "toNode": "part5",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "e21",
+      "fromNode": "part5",
+      "fromSide": "bottom",
+      "toNode": "prepare",
+      "toSide": "top",
+      "color": "3"
+    },
+    {
+      "id": "e22",
+      "fromNode": "prepare",
+      "fromSide": "right",
+      "toNode": "steps",
+      "toSide": "left",
+      "color": "3"
+    },
+    {
+      "id": "e23",
+      "fromNode": "steps",
+      "fromSide": "right",
+      "toNode": "profile",
+      "toSide": "left",
+      "color": "5"
+    },
+    {
+      "id": "e24",
+      "fromNode": "profile",
+      "fromSide": "right",
+      "toNode": "safety",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e25",
+      "fromNode": "safety",
+      "fromSide": "bottom",
+      "toNode": "part6",
+      "toSide": "top",
+      "color": "6"
+    },
+    {
+      "id": "e26",
+      "fromNode": "part6",
+      "fromSide": "bottom",
+      "toNode": "qa",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e27",
+      "fromNode": "qa",
+      "fromSide": "right",
+      "toNode": "action",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e28",
+      "fromNode": "action",
+      "fromSide": "right",
+      "toNode": "close",
+      "toSide": "left",
+      "color": "6"
+    },
+    {
+      "id": "e15c",
+      "fromNode": "friends",
+      "fromSide": "bottom",
+      "toNode": "img-hq1",
+      "toSide": "top",
+      "color": "4"
+    },
+    {
+      "id": "e15d",
+      "fromNode": "img-hq3",
+      "fromSide": "right",
+      "toNode": "brand",
+      "toSide": "left",
+      "color": "5"
+    },
+    {
+      "id": "e15e",
+      "fromNode": "brand",
+      "fromSide": "bottom",
+      "toNode": "part4",
+      "toSide": "top",
+      "color": "2"
+    }
+  ]
+}
