@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a66c2">
   <meta name="description" content="世界一周大学に関わるみなさんへ。LinkedInを知り、旅や挑戦を次の出会いにつなげるオンライン説明会。2026年10月15日21:00開催。">
   <meta property="og:title" content="旅と挑戦を、次の出会いへ。｜世界一周大学 × LinkedIn">
   <meta property="og:description" content="LinkedInを初めて知る人のための、1時間のオンライン説明会。10月26日のLinkedInオフィスイベントへつながります。">
@@ -11,19 +12,21 @@
   <title>旅と挑戦を、次の出会いへ。｜世界一周大学 × LinkedIn</title>
   <style>
     :root {
-      --ink: #14231b;
-      --muted: #5d6c63;
-      --paper: #fbf9f1;
+      --ink: #191919;
+      --muted: #5e5e5e;
+      --paper: #f3f2ef;
       --surface: #ffffff;
-      --forest: #174c36;
-      --forest-deep: #0d3424;
-      --leaf: #69a96b;
-      --sun: #f2b544;
-      --sky: #d9eef1;
-      --line: rgba(20, 35, 27, .14);
-      --radius-lg: 28px;
-      --radius-md: 18px;
-      --max: 1120px;
+      --linkedin: #0a66c2;
+      --linkedin-dark: #004182;
+      --linkedin-light: #70b5f9;
+      --linkedin-bg: #eef3f8;
+      --masato-blue: #1a8ccc;
+      --masato-deep: #0c5d8a;
+      --accent-warm: #e8f4fc;
+      --line: rgba(0, 0, 0, .1);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 680px;
     }
 
     * { box-sizing: border-box; }
@@ -37,20 +40,22 @@
     }
     a { color: inherit; }
     img { display: block; max-width: 100%; }
-    .wrap { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+    .wrap { width: min(calc(100% - 24px), var(--max)); margin-inline: auto; }
     .eyebrow {
-      margin: 0 0 12px;
-      color: var(--forest);
-      font-size: 13px;
+      margin: 0 0 10px;
+      color: var(--linkedin);
+      font-size: 12px;
       font-weight: 800;
-      letter-spacing: .16em;
+      letter-spacing: .12em;
       text-transform: uppercase;
     }
     h1, h2, h3, p { margin-top: 0; }
-    h1, h2, h3 { line-height: 1.25; letter-spacing: -.03em; }
-    h1 { margin-bottom: 22px; font-size: clamp(42px, 7.5vw, 88px); }
-    h2 { margin-bottom: 22px; font-size: clamp(30px, 4.5vw, 54px); }
-    h3 { margin-bottom: 10px; font-size: 21px; }
+    h1, h2, h3 { line-height: 1.35; letter-spacing: -.02em; text-wrap: balance; }
+    h1 { margin-bottom: 18px; font-size: clamp(34px, 8.5vw, 56px); }
+    h2 { margin-bottom: 18px; font-size: clamp(24px, 6.2vw, 36px); }
+    h3 { margin-bottom: 8px; font-size: 18px; }
+    .title-plain br { display: none; }
+    .title-lines span { display: block; }
     .lead { color: var(--muted); font-size: clamp(17px, 2vw, 20px); }
     .button {
       display: inline-flex;
@@ -58,16 +63,18 @@
       align-items: center;
       justify-content: center;
       padding: 0 24px;
-      border: 1px solid var(--forest);
+      border: 1px solid var(--linkedin);
       border-radius: 999px;
-      background: var(--forest);
+      background: var(--linkedin);
       color: #fff;
       font-weight: 800;
       text-decoration: none;
       transition: transform .2s ease, background .2s ease;
     }
-    .button:hover { transform: translateY(-2px); background: var(--forest-deep); }
-    .button--light { border-color: #fff; background: #fff; color: var(--forest); }
+    .button:hover { transform: translateY(-2px); background: var(--linkedin-dark); }
+    .button--light { border-color: #fff; background: #fff; color: var(--linkedin-dark); }
+    .button--masato { border-color: var(--masato-blue); background: var(--masato-blue); }
+    .button--masato:hover { background: var(--masato-deep); }
 
     .nav {
       position: absolute;
@@ -78,100 +85,124 @@
       padding: 22px 0;
       color: #fff;
     }
-    .nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-    .brand { font-size: 14px; font-weight: 800; letter-spacing: .08em; }
-    .nav__link { font-size: 13px; font-weight: 700; text-decoration: none; }
+    .nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .brand { font-size: 13px; font-weight: 800; letter-spacing: .04em; line-height: 1.3; }
+    .nav__link {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: var(--linkedin);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
 
     .hero {
       position: relative;
-      min-height: 94svh;
+      min-height: auto;
       overflow: hidden;
       display: grid;
       align-items: end;
       color: #fff;
-      background: var(--forest-deep);
+      background: var(--linkedin-dark);
     }
     .hero::before {
       position: absolute;
       inset: 0;
       content: "";
       background:
-        linear-gradient(90deg, rgba(8, 34, 23, .92) 0%, rgba(8, 34, 23, .65) 45%, rgba(8, 34, 23, .2) 100%),
+        linear-gradient(0deg, rgba(0, 65, 130, .94) 0%, rgba(0, 65, 130, .55) 55%, rgba(0, 65, 130, .35) 100%),
         url("photos/sekadai-beach-banner.jpg") center / cover;
     }
-    .hero__content { position: relative; z-index: 1; padding: 170px 0 80px; }
-    .hero__copy { max-width: 790px; }
-    .hero__copy .eyebrow { color: #d8f0dc; }
-    .hero__copy .lead { max-width: 640px; color: rgba(255,255,255,.84); }
+    .hero__content { position: relative; z-index: 1; padding: 96px 0 48px; }
+    .hero__copy { max-width: none; }
+    .hero__copy .eyebrow { color: var(--linkedin-light); }
+    .hero__copy .lead { color: rgba(255,255,255,.9); font-size: 16px; }
     .hero__meta {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 30px 0;
+      flex-direction: column;
+      gap: 8px;
+      margin: 22px 0;
       padding: 0;
       list-style: none;
     }
     .hero__meta li {
-      padding: 8px 14px;
-      border: 1px solid rgba(255,255,255,.35);
-      border-radius: 999px;
-      background: rgba(13, 52, 36, .55);
-      font-size: 14px;
+      padding: 0;
+      font-size: 15px;
       font-weight: 700;
-      backdrop-filter: blur(8px);
+      line-height: 1.5;
     }
+    .hero__actions { display: flex; flex-direction: column; gap: 10px; }
+    .hero__actions .button { width: 100%; }
 
-    section { padding: 110px 0; }
+    section { padding: 56px 0; }
     .intro { background: var(--surface); }
     .intro__grid {
       display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 70px;
+      gap: 28px;
       align-items: start;
     }
     .statement {
       padding-left: 26px;
-      border-left: 5px solid var(--sun);
+      border-left: 4px solid var(--masato-blue);
       font-size: clamp(23px, 3vw, 34px);
       font-weight: 800;
       line-height: 1.5;
     }
-    .small-copy { color: var(--muted); font-size: 16px; }
+    .small-copy { color: var(--muted); font-size: 15px; line-height: 1.75; }
+
+    .audiences { background: var(--linkedin-bg); }
+    .audience-cards { display: grid; gap: 14px; margin-top: 24px; }
+    .audience-card {
+      padding: 20px;
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+    .audience-card h3 { margin-bottom: 10px; color: var(--linkedin-dark); font-size: 17px; }
+    .audience-card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .note-instagram {
+      margin-top: 24px;
+      padding: 16px 18px;
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      border-left: 4px solid var(--masato-blue);
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.75;
+    }
 
     .three {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 50px;
+      gap: 0;
+      margin-top: 32px;
     }
     .point {
-      min-height: 260px;
-      padding: 28px;
+      padding: 22px 0;
       border-top: 1px solid var(--line);
-      background: rgba(255,255,255,.48);
     }
     .point__number {
       display: block;
-      margin-bottom: 38px;
-      color: var(--leaf);
-      font-size: 14px;
-      font-weight: 900;
-      letter-spacing: .12em;
+      margin-bottom: 8px;
+      color: var(--masato-blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
     }
     .point p { color: var(--muted); }
 
-    .bridge { background: var(--sky); }
+    .bridge { background: var(--linkedin-bg); }
     .bridge__grid {
       display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 64px;
-      align-items: center;
+      gap: 28px;
+      align-items: start;
     }
     .bridge__visual {
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 16 / 10;
       overflow: hidden;
       border-radius: var(--radius-lg);
-      background: var(--forest);
+      background: var(--linkedin-dark);
     }
     .bridge__visual img { width: 100%; height: 100%; object-fit: cover; }
     .path { display: grid; gap: 18px; margin-top: 34px; }
@@ -183,86 +214,83 @@
       padding-bottom: 18px;
       border-bottom: 1px solid rgba(20,35,27,.16);
     }
-    .path__date { color: var(--forest); font-weight: 900; }
+    .path__date { color: var(--linkedin); font-weight: 900; font-size: 15px; }
     .path__item p { margin: 3px 0 0; color: var(--muted); }
 
-    .host { background: var(--forest-deep); color: #fff; }
+    .host { background: linear-gradient(165deg, var(--linkedin-dark) 0%, var(--masato-deep) 100%); color: #fff; }
     .host__grid {
       display: grid;
-      grid-template-columns: .72fr 1.28fr;
-      gap: 70px;
-      align-items: center;
+      gap: 28px;
+      align-items: start;
     }
     .host__photos {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 10px;
     }
     .host__portrait {
-      margin: 0;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 340px;
+      max-height: 220px;
+      aspect-ratio: 4 / 3;
       overflow: hidden;
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-md);
       background: #0a66c2;
     }
-    .host__portrait:first-child { grid-column: 1 / 3; aspect-ratio: 4 / 3; }
-    .host__portrait:nth-child(2),
-    .host__portrait:nth-child(3) { aspect-ratio: 4 / 5; }
-    .host__portrait img { width: 100%; height: 100%; object-fit: cover; }
-    .host .eyebrow { color: #a8d6ad; }
+    .host__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+    .host .eyebrow { color: var(--linkedin-light); }
     .host .lead, .host p { color: rgba(255,255,255,.76); }
     .facts {
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 22px;
     }
     .fact {
-      padding: 11px 15px;
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 10px;
+      padding: 8px 0;
+      border: none;
+      border-bottom: 1px solid rgba(255,255,255,.2);
+      border-radius: 0;
       color: #fff;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 600;
+      width: 100%;
     }
 
     .experience { background: var(--paper); }
     .experience__head {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: end;
-      margin-bottom: 54px;
+      gap: 20px;
+      align-items: start;
+      margin-bottom: 28px;
     }
     .experience__head .lead { margin-bottom: 0; }
-    .hq-grid {
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      grid-template-rows: repeat(2, 310px);
-      gap: 14px;
-    }
-    .hq-grid figure {
-      margin: 0;
+    .office-feature {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 360px;
+      max-height: 240px;
+      aspect-ratio: 4 / 3;
       overflow: hidden;
       border-radius: var(--radius-md);
-      background: var(--sky);
+      background: var(--linkedin-bg);
     }
-    .hq-grid figure:first-child { grid-row: 1 / 3; }
-    .hq-grid img { width: 100%; height: 100%; object-fit: cover; }
+    .office-feature img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
     .experience__story {
       display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 60px;
+      gap: 28px;
       align-items: start;
-      margin-top: 60px;
+      margin-top: 32px;
     }
     .experience__quote {
-      padding: 30px;
+      padding: 22px;
       border-radius: var(--radius-md);
-      background: var(--forest);
+      background: var(--linkedin);
       color: #fff;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 800;
-      line-height: 1.5;
+      line-height: 1.55;
     }
     .experience__quote cite {
       display: block;
@@ -276,20 +304,48 @@
     .story-list article { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
     .story-list p { margin-bottom: 0; color: var(--muted); }
     .link-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-    .button--outline { background: transparent; color: var(--forest); }
+    .community-block {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+    .community-block h3 { font-size: 18px; color: var(--linkedin-dark); }
+    .community-block p { color: var(--muted); font-size: 15px; line-height: 1.75; }
+    .video-poster {
+      display: block;
+      position: relative;
+      margin-top: 16px;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      background: #000;
+    }
+    .video-poster img { width: 100%; height: auto; display: block; vertical-align: middle; }
+    .video-poster__play {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(0deg, rgba(0, 65, 130, .55), rgba(0, 65, 130, .25));
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+    .button--outline { background: transparent; color: var(--linkedin-dark); border-color: var(--linkedin); }
+    .host .button--outline { color: #fff; border-color: rgba(255,255,255,.55); }
     .button--outline:hover { color: #fff; }
 
     .brand-mini {
-      padding: 78px 0;
+      padding: 56px 0;
       background: var(--surface);
     }
     .brand-mini__grid {
       display: grid;
-      grid-template-columns: 1fr repeat(3, .72fr);
-      gap: 20px;
+      gap: 16px;
       align-items: stretch;
     }
-    .brand-mini__intro { padding-right: 28px; }
+    .brand-mini__intro { padding-right: 0; }
     .brand-card {
       padding: 26px;
       border: 1px solid var(--line);
@@ -297,133 +353,85 @@
     }
     .brand-card span {
       display: block;
-      margin-bottom: 25px;
-      color: var(--leaf);
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: .12em;
+      margin-bottom: 10px;
+      color: var(--masato-blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
     }
     .brand-card p { margin: 0; color: var(--muted); font-size: 15px; }
 
-    .agenda__list { margin-top: 50px; border-top: 1px solid var(--line); }
+    .agenda__list { margin-top: 28px; border-top: 1px solid var(--line); }
     .agenda__item {
       display: grid;
-      grid-template-columns: 90px 1fr 100px;
-      gap: 22px;
-      align-items: baseline;
-      padding: 24px 0;
+      grid-template-columns: 56px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 18px 0;
       border-bottom: 1px solid var(--line);
     }
+    .agenda__minutes { display: none; }
     .agenda__time, .agenda__minutes { color: var(--muted); font-size: 14px; font-weight: 700; }
     .agenda__item h3 { margin: 0; }
 
     .event {
       position: relative;
       overflow: hidden;
-      background: var(--sun);
+      background: var(--accent-warm);
     }
     .event__grid {
       display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 60px;
-      align-items: end;
+      gap: 24px;
+      align-items: start;
     }
-    .event__date {
-      color: var(--forest-deep);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(76px, 13vw, 160px);
-      line-height: .78;
-      letter-spacing: -.07em;
-      text-align: right;
-    }
+    .event__date { display: none; }
     .event__details {
-      margin-top: 30px;
-      padding: 26px 0 0;
-      border-top: 1px solid rgba(20,35,27,.3);
+      margin-top: 22px;
+      padding: 18px 0 0;
+      border-top: 1px solid rgba(0, 65, 130, .18);
     }
-    .event__details p { margin-bottom: 8px; font-weight: 700; }
-    .event__office { margin-top: 56px; padding-top: 48px; border-top: 1px solid rgba(20,35,27,.22); }
-    .event__office-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 1fr 1fr;
-      grid-template-rows: 210px 210px;
-      gap: 12px;
-      margin-top: 28px;
+    .event__details p { margin-bottom: 8px; font-weight: 700; font-size: 15px; }
+    .event__office { margin-top: 32px; padding-top: 0; border-top: none; }
+    .event__office .office-feature { max-width: 360px; max-height: 240px; }
+    .event__office-caption {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
     }
-    .event__office-grid figure {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-      overflow: hidden;
-      border-radius: var(--radius-md);
-      background: rgba(20,35,27,.08);
-    }
-    .event__office-grid figure:first-child { grid-row: 1 / 3; }
-    .event__office-grid img { flex: 1; width: 100%; min-height: 0; object-fit: cover; }
-    .event__office-grid figcaption {
-      flex: none;
-      padding: 10px 12px 12px;
-      color: var(--forest-deep);
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 1.4;
-      background: rgba(255,255,255,.55);
-    }
-    .photo-credit { margin-top: 14px; color: var(--muted); font-size: 12px; }
-    .photo-credit a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 
     .adventure { padding-bottom: 30px; background: var(--paper); }
     .adventure__head {
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      align-items: end;
-      margin-bottom: 36px;
+      display: grid;
+      gap: 16px;
+      margin-bottom: 24px;
     }
-    .adventure__head p { max-width: 520px; margin-bottom: 0; color: var(--muted); }
+    .adventure__head p { margin-bottom: 0; color: var(--muted); font-size: 15px; }
     .photo-grid {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: 150px;
-      gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 120px;
+      gap: 8px;
     }
-    .photo-grid figure { margin: 0; overflow: hidden; border-radius: 12px; background: var(--sky); }
-    .photo-grid figure:nth-child(1) { grid-column: span 7; grid-row: span 2; }
-    .photo-grid figure:nth-child(2) { grid-column: span 5; grid-row: span 2; }
-    .photo-grid figure:nth-child(3),
-    .photo-grid figure:nth-child(4),
-    .photo-grid figure:nth-child(5) { grid-column: span 4; grid-row: span 2; }
-    .photo-grid figure:nth-child(n+6) { grid-column: span 3; grid-row: span 2; }
+    .photo-grid figure { margin: 0; overflow: hidden; border-radius: 10px; background: var(--linkedin-bg); }
+    .photo-grid figure:first-child { grid-column: 1 / 3; grid-row: span 2; min-height: 200px; }
     .photo-grid img { width: 100%; height: 100%; object-fit: cover; }
 
     .entry { background: var(--surface); }
     .entry__grid {
-      display: grid;
-      grid-template-columns: .75fr 1.25fr;
-      gap: 60px;
-      align-items: start;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: stretch;
     }
-    .entry__steps { counter-reset: step; display: grid; gap: 18px; margin-top: 36px; }
+    .entry__intro { order: 2; }
+    .form-shell { order: 1; }
+    .entry__steps { display: grid; gap: 14px; margin-top: 24px; }
     .entry__step {
-      position: relative;
-      padding-left: 46px;
+      padding: 14px 0 14px 14px;
+      border-left: 3px solid var(--linkedin);
       color: var(--muted);
-    }
-    .entry__step::before {
-      counter-increment: step;
-      content: counter(step);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 30px;
-      height: 30px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: var(--forest);
-      color: #fff;
-      font-size: 13px;
-      font-weight: 900;
+      font-size: 15px;
     }
     .form-shell {
       min-height: 520px;
@@ -444,53 +452,71 @@
       font-size: 13px;
       text-align: center;
     }
-    .form-shell__fallback a { color: var(--forest); font-weight: 700; }
+    .form-shell__fallback a { color: var(--linkedin); font-weight: 700; }
 
     .faq { background: var(--paper); }
     details { padding: 22px 0; border-bottom: 1px solid var(--line); }
     summary { cursor: pointer; font-weight: 800; }
     details p { margin: 14px 0 0; color: var(--muted); }
 
-    footer { padding: 42px 0; background: var(--forest-deep); color: rgba(255,255,255,.7); }
-    .footer__inner { display: flex; justify-content: space-between; gap: 24px; font-size: 13px; }
+    footer { padding: 32px 0; background: var(--linkedin-dark); color: rgba(255,255,255,.75); }
+    .footer__inner { display: grid; gap: 8px; font-size: 13px; }
 
-    @media (max-width: 760px) {
-      .wrap { width: min(calc(100% - 28px), var(--max)); }
-      section { padding: 78px 0; }
-      .nav__link { display: none; }
-      .hero { min-height: 88svh; }
-      .hero::before {
-        background:
-          linear-gradient(0deg, rgba(8,34,23,.94) 0%, rgba(8,34,23,.45) 80%),
-          url("photos/sekadai-beach-banner.jpg") center / cover;
+    a:not(.button):not(.nav__link) { color: var(--linkedin); text-decoration: underline; text-underline-offset: 3px; }
+    .host a:not(.button) { color: var(--linkedin-light); }
+
+    @media (min-width: 900px) {
+      :root { --max: 1120px; }
+      .wrap { width: min(calc(100% - 40px), var(--max)); }
+      section { padding: 88px 0; }
+      h1 { font-size: clamp(48px, 6vw, 72px); }
+      h2 { font-size: clamp(32px, 3.5vw, 48px); }
+      .title-plain br { display: inline; }
+      .title-lines--one-line span { display: inline; }
+      .title-lines--one-line span:first-child::after { content: " "; }
+      .hero__content { padding: 140px 0 72px; }
+      .hero__meta { flex-direction: row; flex-wrap: wrap; gap: 16px; }
+      .hero__actions { flex-direction: row; }
+      .hero__actions .button { width: auto; }
+      .intro__grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+      .audience-cards { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .three { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      .bridge__grid { grid-template-columns: .85fr 1.15fr; gap: 48px; align-items: center; }
+      .host__grid { grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: center; }
+      .host__photos { justify-items: start; }
+      .host__portrait { max-width: 380px; max-height: 260px; }
+      .facts { flex-direction: row; flex-wrap: wrap; gap: 12px; }
+      .fact { width: auto; border-bottom: none; padding: 10px 14px; border: 1px solid rgba(255,255,255,.22); border-radius: 8px; }
+      .experience__head { grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; }
+      .experience__story { grid-template-columns: .85fr 1.15fr; gap: 40px; }
+      .office-feature { max-width: 440px; max-height: 280px; aspect-ratio: 16 / 10; }
+      .event__office .office-feature { max-width: 440px; max-height: 280px; }
+      .brand-mini__grid { grid-template-columns: 1fr repeat(3, 1fr); gap: 16px; }
+      .event__grid { grid-template-columns: 1.2fr .8fr; align-items: end; }
+      .event__date {
+        display: block;
+        color: var(--linkedin-dark);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(72px, 10vw, 140px);
+        line-height: .78;
+        letter-spacing: -.07em;
+        text-align: right;
+        opacity: .35;
       }
-      .hero__content { padding: 140px 0 56px; }
-      .intro__grid, .bridge__grid, .host__grid, .experience__head, .experience__story, .brand-mini__grid, .event__grid, .entry__grid { grid-template-columns: 1fr; gap: 40px; }
-      .event__office-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
-      .event__office-grid figure:first-child { grid-row: auto; grid-column: 1 / 3; min-height: 240px; }
-      .three { grid-template-columns: 1fr; }
-      .point { min-height: auto; }
-      .point__number { margin-bottom: 18px; }
-      .bridge__visual { aspect-ratio: 16 / 10; }
-      .host__photos { grid-template-columns: 1fr 1fr; }
-      .host__portrait:first-child { aspect-ratio: 16 / 10; }
-      .hq-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 330px 190px; }
-      .hq-grid figure:first-child { grid-column: 1 / 3; grid-row: auto; }
-      .brand-mini__intro { padding-right: 0; }
-      .agenda__item { grid-template-columns: 70px 1fr; }
-      .agenda__minutes { display: none; }
-      .event__date { text-align: left; }
-      .adventure__head { display: block; }
-      .photo-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
-      .photo-grid figure,
-      .photo-grid figure:nth-child(1),
-      .photo-grid figure:nth-child(2),
-      .photo-grid figure:nth-child(3),
-      .photo-grid figure:nth-child(4),
-      .photo-grid figure:nth-child(5),
-      .photo-grid figure:nth-child(n+6) { grid-column: span 1; grid-row: span 1; }
-      .photo-grid figure:first-child { grid-column: 1 / 3; grid-row: span 2; }
-      .footer__inner { flex-direction: column; }
+      .entry__grid {
+        display: grid;
+        grid-template-columns: .75fr 1.25fr;
+        gap: 48px;
+      }
+      .entry__intro, .form-shell { order: unset; }
+      .agenda__item { grid-template-columns: 72px 1fr 80px; align-items: baseline; }
+      .agenda__minutes { display: block; }
+      .photo-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 140px;
+      }
+      .photo-grid figure:first-child { grid-column: span 2; grid-row: span 2; }
+      .footer__inner { display: flex; justify-content: space-between; }
     }
   </style>
 </head>
@@ -506,8 +532,8 @@
     <section class="hero">
       <div class="wrap hero__content">
         <div class="hero__copy">
-          <p class="eyebrow">Online orientation · 2026.10.15</p>
-          <h1>旅と挑戦を、<br>次の出会いへ。</h1>
+          <p class="eyebrow">Online orientation 2026.10.15</p>
+          <h1>旅と挑戦を次の出会いへ</h1>
           <p class="lead">
             世界一周大学で得た経験は、まだ見ぬ人や仕事につながる。
             はじめてのLinkedInを、みんなで一緒に始める1時間です。
@@ -517,7 +543,9 @@
             <li>Zoom</li>
             <li>参加無料</li>
           </ul>
-          <a class="button button--light" href="#entry">説明会に申し込む</a>
+          <div class="hero__actions">
+            <a class="button button--light" href="#entry">説明会に申し込む</a>
+          </div>
         </div>
       </div>
     </section>
@@ -527,36 +555,59 @@
         <div class="intro__grid">
           <div>
             <p class="eyebrow">Why LinkedIn?</p>
-            <h2>世界を広げるのは、<br>いつだって人との出会い。</h2>
+            <h2 class="title-plain">世界を広げるのはいつだって人との出会い</h2>
           </div>
           <div>
             <p class="statement">
-              LinkedInは、仕事やキャリアをきっかけに、人と人がつながるSNSです。
+              社会と本当につながる場所は、LinkedInです。
             </p>
             <p class="small-copy">
-              Instagramが日常や写真を共有する場所なら、LinkedInは経験・得意なこと・挑戦を伝える場所。
-              就活や転職だけでなく、仲間、メンター、仕事、プロジェクトとの出会いが生まれます。
+              仕事やキャリアをきっかけに、人と人がつながるSNS。
+              求人やスカウトが集まる場所でもあり、学び続ける自分を更新していくパーソナルブランディングの場所でもあります。
+              特別な肩書がなくても、今の挑戦を言葉にすれば始められます。
             </p>
           </div>
         </div>
 
         <div class="three">
           <article class="point">
-            <span class="point__number">01 · PROFILE</span>
-            <h3>経験を「見える形」に</h3>
-            <p>旅、フィールドワーク、ボランティア。履歴書に収まりきらない挑戦も、自分の物語として残せます。</p>
+            <span class="point__number">01 STUDENTS</span>
+            <h3>大学生は就活の武器になる</h3>
+            <p>1年生から4年生まで、早期から使うほど就活で差がつきます。世界一周大学の旅やフィールドワークは、履歴書だけでは伝わらない。LinkedInなら物語として残せます。</p>
           </article>
           <article class="point">
-            <span class="point__number">02 · CONNECTION</span>
-            <h3>会いたい人につながる</h3>
-            <p>業界や地域を越えて、先輩、社会人、経営者、世界で働く人たちと直接つながる入口になります。</p>
+            <span class="point__number">02 PROFESSIONALS</span>
+            <h3>社会人・起業家は特に必須</h3>
+            <p>ビジネスをしている人、自分で事業をしている人、グローバルで活躍したい人。日本にいながら世界と仕事したい人も、LinkedInは欠かせないツールです。</p>
           </article>
           <article class="point">
-            <span class="point__number">03 · CHANCE</span>
-            <h3>挑戦が次の機会を呼ぶ</h3>
-            <p>発信と対話を重ねるほど、インターン、仕事、登壇、コラボレーションの可能性が広がります。</p>
+            <span class="point__number">03 SHARING</span>
+            <h3>旅の記録も発信できる</h3>
+            <p>Instagramで旅を残すのも、もちろんありです。LinkedInでは、その経験をキャリアや次の挑戦につながる形でも残せます。</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="audiences">
+      <div class="wrap">
+        <p class="eyebrow">Who it&apos;s for</p>
+        <h2 class="title-plain">意識が高い人だけの道具じゃない</h2>
+        <p class="small-copy">
+          海外移住や大企業の経営層だけの話ではありません。
+          日々学んでいること、挑戦していることを記録し、会いたい人とつながる。それだけで十分価値があります。
+        </p>
+        <div class="audience-cards">
+          <article class="audience-card">
+            <h3>大学生・大学院生</h3>
+            <p>就活だけでなく、インターンやメンター探しにも。世界一周大学で積んだ経験を、社会人の目に触れる形で残せます。</p>
+          </article>
+          <article class="audience-card">
+            <h3>社会人・フリーランス・経営者</h3>
+            <p>転職・副業・協業の入口になるほか、自分の専門性やビジョンを発信してブランドを育てられます。仕事の募集も多く、逆にオファーが来ることもあります。</p>
+          </article>
+        </div>
+        <p class="note-instagram">Instagramで旅や日常を共有するのも、ひとつのいい方法です。</p>
       </div>
     </section>
 
@@ -567,7 +618,7 @@
         </figure>
         <div>
           <p class="eyebrow">Two connected events</p>
-          <h2>10月15日は、<br>冒険の「準備編」。</h2>
+          <h2 class="title-plain">10月15日は冒険の準備編</h2>
           <p class="lead">
             まずオンラインでLinkedInを知り、アカウントを作る。
             その先には、10月26日のLinkedInオフィスイベントが待っています。
@@ -596,35 +647,38 @@
       <div class="wrap host__grid">
         <div class="host__photos">
           <figure class="host__portrait">
-            <img src="photos/linkedin-hq-ishizaka.png" alt="LinkedIn本社のロゴ前に立つ山元ライキと石坂誠さん">
-          </figure>
-          <figure class="host__portrait">
-            <img src="photos/linkedin-hq-raiki.png" alt="LinkedIn本社を訪れた山元ライキ">
-          </figure>
-          <figure class="host__portrait">
-            <img src="photos/linkedin-hq-group.png" alt="LinkedIn本社を訪れた企業訪問メンバー">
+            <img src="photos/linkedin-japan-office-visit.jpg" alt="LinkedIn Japanオフィスで金継ぎデザインのinロゴの前に立つ山元ライキと石坂誠さん">
           </figure>
         </div>
         <div>
           <p class="eyebrow">Navigator</p>
-          <h2>山元ライキが、<br>等身大で案内します。</h2>
+          <h2 class="title-plain">山元ライキが等身大で案内します</h2>
           <p class="lead">
             「LinkedInって意識高そう」「何を書けばいいかわからない」。
             そんな状態からで大丈夫です。
           </p>
           <p>
-            LinkedIn本社、日本オフィス、Student Club。石坂誠さんをはじめ、
-            たくさんの方に教えてもらいながら、僕自身がつながりを広げてきました。
-            特別な肩書ができてからではなく、今の挑戦を伝えるところから一緒に始めましょう。
+            僕自身、LinkedInから仕事の依頼をもらった機会がたくさんあります。
+            Microsoft、Amazon、Google、Meta、Apple、Netflix、Sony、Deloitte、KPMG、EY、Goldman Sachsなど
+            さまざまな企業の方とつながり、社長やスタートアップの経営者・マネージャーなど、
+            本当にいろんな方と200人以上話してきました（つながり 7,200+）。
+          </p>
+          <p>
+            本社や日本オフィス、Student Club。石坂誠さんをはじめ多くの方に教わりながら、
+            つながりを広げてきました。特別な肩書ができてから始める必要はなく、
+            今の挑戦を伝えるところから一緒に始めましょう。
           </p>
           <div class="facts">
             <span class="fact">LinkedIn 7,200+</span>
+            <span class="fact">LinkedIn経由の仕事多数</span>
+            <span class="fact">グローバル企業とつながり</span>
             <span class="fact">対話 200人+</span>
-            <span class="fact">海外インターン獲得</span>
+            <span class="fact">グローバルキャリアコミュニティ リーダー</span>
             <span class="fact">世界一周大学プロデューサー</span>
           </div>
           <div class="link-row">
             <a class="button button--light" href="https://raiki-portfolio2.vercel.app/" target="_blank" rel="noopener noreferrer">ポートフォリオを見る ↗</a>
+            <a class="button button--outline" href="https://www.instagram.com/glob.career/?hl=ja" target="_blank" rel="noopener noreferrer">Global Career Community ↗</a>
           </div>
         </div>
       </div>
@@ -635,29 +689,20 @@
         <div class="experience__head">
           <div>
             <p class="eyebrow">Real experience</p>
-            <h2>LinkedInを、外から<br>眺めてきたわけじゃない。</h2>
+            <h2 class="title-plain">LinkedInを外から眺めてきたわけじゃない</h2>
           </div>
           <p class="lead">
-            本社訪問、日本オフィス、Student Club、企業訪問。
-            LinkedInでつながった人たちに教わりながら、僕自身がたくさんの機会を受け取ってきました。
+            求人を探す場所であると同時に、スカウトや協業のオファーが届く場所。
+            社会人として成長し、ブランドを育て、就活も転職も前に進める。僕はその両方をLinkedInで経験してきました。
           </p>
-        </div>
-
-        <div class="hq-grid">
-          <figure>
-            <img src="photos/linkedin-hq-group.png" alt="LinkedIn本社のロゴ前で撮影した企業訪問メンバー" loading="lazy">
-          </figure>
-          <figure>
-            <img src="photos/linkedin-hq-raiki.png" alt="LinkedIn本社を訪問した山元ライキ" loading="lazy">
-          </figure>
-          <figure>
-            <img src="photos/linkedin-hq-ishizaka.png" alt="LinkedIn本社のロゴ前で石坂誠さんと撮影した山元ライキ" loading="lazy">
-          </figure>
         </div>
 
         <div class="experience__story">
           <blockquote class="experience__quote">
-            運をつかむ<br>＝ 準備の質 × 機会の数
+            <span class="title-lines">
+              <span>運をつかむ</span>
+              <span>＝ 準備の質 × 機会の数</span>
+            </span>
             <cite>LinkedIn本社訪問で学び、今も大切にしている言葉</cite>
           </blockquote>
           <div>
@@ -668,12 +713,39 @@
               </article>
               <article>
                 <h3>石坂誠さんから学んだ、つながりの力</h3>
-                <p><a href="https://www.linkedin.com/in/makoto1118/" target="_blank" rel="noopener noreferrer">石坂誠（Makoto Ishizaka）さん</a>やシアトル経産会のみなさんと、シアトル・サンフランシスコで企業訪問。日本オフィスでも学び、10月26日は同じオフィスで一緒に講演します。LinkedInの使い方だけでなく、人との信頼を次の出会いへつなげる姿勢を教えていただきました。</p>
+                <p><a href="https://www.linkedin.com/in/makoto1118/" target="_blank" rel="noopener noreferrer">石坂誠（Makoto Ishizaka）さん</a>とシアトル・サンフランシスコで企業訪問。日本オフィスでも学び、10月26日は同じオフィスで一緒に講演します。LinkedInの使い方だけでなく、人との信頼を次の出会いへつなげる姿勢を教えていただきました。</p>
+              </article>
+              <article>
+                <h3>グローバルキャリアコミュニティを運営</h3>
+                <p>
+                  僕がリーダーを務めた
+                  <a href="https://www.instagram.com/glob.career/?hl=ja" target="_blank" rel="noopener noreferrer">Global Career Community（グローバルキャリアコミュニティ）</a>
+                  では、シアトル・サンフランシスコでの企業訪問やキャリアイベントを運営してきました。
+                  Google本社での学びなど、資料上はシアトル経産会の枠に見えることもありますが、実際に企画・運営していたのはこのコミュニティのイベントです。
+                </p>
               </article>
               <article>
                 <h3>LinkedIn Student Clubと実践</h3>
                 <p>学生向けイベントへの参加・協力を重ね、自分のプロダクトをイベント景品として提供していただくなど、オンラインのつながりがリアルな共創へ広がる経験をしてきました。</p>
               </article>
+            </div>
+            <div class="community-block">
+              <h3>Global Career Community</h3>
+              <p>
+                Instagramで活動の様子を発信しています。下の動画は、コミュニティで実際に行った学びのひとつです（Google訪問のシーンから再生）。
+              </p>
+              <div class="link-row">
+                <a class="button" href="https://www.instagram.com/glob.career/?hl=ja" target="_blank" rel="noopener noreferrer">Instagram @glob.career ↗</a>
+              </div>
+              <a
+                class="video-poster"
+                href="https://www.youtube.com/watch?v=nMdkioAuo3s&t=779s"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="photos/youtube-gcc-video.jpg" alt="Global Career Community 活動動画のサムネイル" width="480" height="360" loading="lazy">
+                <span class="video-poster__play">YouTubeで動画を見る ↗</span>
+              </a>
             </div>
             <div class="link-row">
               <a class="button" href="https://www.linkedin.com/posts/raiki-yamamoto-047106277_egxegtegaefjegiegeegnefseghegzegieewhkoeeo-ugcPost-7237587980989644800-Bew3/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7237587982734532610&amp;highlightedUpdateType=SOCIAL_SHARE&amp;origin=SOCIAL_SHARE&amp;utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAEN4JLcBpGuGgVrkJU4SNucCyFiNE7u66As" target="_blank" rel="noopener noreferrer">LinkedIn本社訪問の投稿を見る ↗</a>
@@ -688,21 +760,21 @@
       <div class="wrap brand-mini__grid">
         <div class="brand-mini__intro">
           <p class="eyebrow">Personal branding</p>
-          <h2>ブランドは、盛ることではなく伝わること。</h2>
+          <h2 class="title-plain">ブランドは盛ることではなく伝わること</h2>
           <p class="small-copy">1時間ですべては完成させません。まずは、この3つが見えるプロフィールを目指します。</p>
         </div>
         <article class="brand-card">
-          <span>01 · WHO</span>
+          <span>WHO</span>
           <h3>何者か</h3>
           <p>現在の所属、役割、興味がひと目で伝わる。</p>
         </article>
         <article class="brand-card">
-          <span>02 · STORY</span>
+          <span>STORY</span>
           <h3>何をしてきたか</h3>
           <p>旅や挑戦を、行動と学びの物語として残す。</p>
         </article>
         <article class="brand-card">
-          <span>03 · NEXT</span>
+          <span>NEXT</span>
           <h3>何をしたいか</h3>
           <p>会いたい人や次の挑戦につながる意思を示す。</p>
         </article>
@@ -712,7 +784,11 @@
     <section class="agenda">
       <div class="wrap">
         <p class="eyebrow">60-minute program</p>
-        <h2>知る、イメージする、<br>その場で始める。</h2>
+        <h2 class="title-lines">
+          <span>知る</span>
+          <span>イメージする</span>
+          <span>その場で始める</span>
+        </h2>
         <div class="agenda__list">
           <div class="agenda__item">
             <span class="agenda__time">21:00</span>
@@ -741,7 +817,7 @@
           </div>
           <div class="agenda__item">
             <span class="agenda__time">21:55</span>
-            <h3>Q&amp;A・次の一歩</h3>
+            <h3>Q&amp;Aと次の一歩</h3>
             <span class="agenda__minutes">5 min</span>
           </div>
         </div>
@@ -753,7 +829,9 @@
         <div class="event__grid">
           <div>
             <p class="eyebrow">Next adventure</p>
-            <h2>LinkedIn Japanオフィスへ、<br>会いに行こう。</h2>
+            <h2 class="title-lines title-lines--one-line">
+              <span>LinkedInのオフィスで</span><span>学ぶ</span>
+            </h2>
             <p class="lead">
               10月26日は、六本木・東京ミッドタウン・タワー8階のLinkedIn Japanオフィスで学ぶ特別な2時間。
               僕は以前、このオフィスを訪れました。次は、みんなと一緒に「中」へ入ります。
@@ -776,29 +854,11 @@
         </div>
         <div class="event__office">
           <p class="eyebrow">Where we&apos;re going</p>
-          <h3>ここに行こう — 木組みと金継ぎがモチーフの、日本らしいLinkedInオフィス。</h3>
-          <div class="event__office-grid">
-            <figure>
-              <img src="photos/linkedin-japan-office-visit.jpg" alt="LinkedIn Japanオフィスで金継ぎデザインのinロゴの前に立つ山元ライキと石坂誠さん" width="1200" height="1600">
-              <figcaption>僕たちが訪れた、LinkedIn Japanオフィス（六本木）</figcaption>
-            </figure>
-            <figure>
-              <img src="photos/linkedin-japan-office-reception.jpg" alt="LinkedIn Japanオフィスの受付 — 木組みをイメージしたデザイン" loading="lazy" width="1536" height="864">
-              <figcaption>受付 — 木組みをイメージした日本らしい空間</figcaption>
-            </figure>
-            <figure>
-              <img src="photos/linkedin-japan-office-event-space.jpg" alt="LinkedIn Japanオフィスのイベント用会議スペース" loading="lazy" width="1536" height="864">
-              <figcaption>約50名規模のイベントスペース</figcaption>
-            </figure>
-            <figure>
-              <img src="photos/linkedin-japan-midtown-exterior.jpg" alt="東京ミッドタウン・タワー — LinkedIn Japan本社ビル" loading="lazy" width="1536" height="864">
-              <figcaption>東京ミッドタウン・タワー（2024年移転）</figcaption>
-            </figure>
-          </div>
-          <p class="photo-credit">
-            オフィス内の参考写真：
-            <a href="https://micetimes.jp/officetour-linkedin/" target="_blank" rel="noopener noreferrer">MICE TIMES ONLINE「リンクトイン・ジャパンでMICEを探る」</a>
-            （2024年取材）より
+          <figure class="office-feature">
+            <img src="photos/linkedin-japan-office-visit.jpg" alt="LinkedIn Japanオフィスで金継ぎデザインのinロゴの前に立つ山元ライキと石坂誠さん" width="1200" height="1600">
+          </figure>
+          <p class="event__office-caption">
+            六本木・東京ミッドタウン。木組みと金継ぎがモチーフの LinkedIn Japan オフィス。10月26日はここで一緒に学びます。
           </p>
         </div>
       </div>
@@ -809,7 +869,7 @@
         <div class="adventure__head">
           <div>
             <p class="eyebrow">Your stories matter</p>
-            <h2>セカダイでの冒険は、<br>あなただけのブランドになる。</h2>
+            <h2 class="title-plain">セカダイでの冒険はあなただけのブランドになる</h2>
           </div>
           <p>
             仲間との旅、想定外の出来事、挑戦した瞬間。
@@ -833,16 +893,16 @@
 
     <section class="entry" id="entry">
       <div class="wrap entry__grid">
-        <div>
+        <div class="entry__intro">
           <p class="eyebrow">Entry</p>
-          <h2>まずは、<br>ここから。</h2>
+          <h2 class="title-plain">まずはここから</h2>
           <p class="lead">
-            第6期生はもちろん、過去の期や、大学生・社会人を問わず、世界一周大学に関わる方なら参加できます。
+            第6期生はもちろん、過去の期や大学生・社会人を問わず、世界一周大学に関わる方なら参加できます。
           </p>
           <div class="entry__steps">
-            <p class="entry__step">右のフォームから説明会に申し込む</p>
+            <p class="entry__step">上のフォームから説明会に申し込む</p>
             <p class="entry__step">登録メールに届くZoomへ参加</p>
-            <p class="entry__step">当日、メールアドレスを使ってLinkedInに登録</p>
+            <p class="entry__step">当日メールアドレスを使ってLinkedInに登録</p>
           </div>
         </div>
         <div class="form-shell">
@@ -875,6 +935,14 @@
         <details>
           <summary>第6期生以外も参加できますか？</summary>
           <p>はい。過去の期を含め、世界一周大学に関わる大学生・社会人のみなさんが対象です。</p>
+        </details>
+        <details>
+          <summary>社会人や起業家にも意味がありますか？</summary>
+          <p>はい。転職・協業・クライアント獲得、グローバルな仕事の入口としてLinkedInは非常に有効です。求人に応募するだけでなく、発信からオファーが来ることもあります。</p>
+        </details>
+        <details>
+          <summary>Instagramを使っていてもLinkedInは作る？</summary>
+          <p>Instagramを続けながら、LinkedInアカウントを持っておく方が多いです。就活やビジネスにつなげたい経験は、LinkedInにも載せておくと後から活きます。</p>
         </details>
         <details>
           <summary>当日準備するものはありますか？</summary>
