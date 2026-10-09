@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>世界一周大学 × LinkedIn チラシ</title>
+  <style>
+    @page { size: 1080px 1920px; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1080px;
+      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+      color: #191919;
+      background: #f3f2ef;
+    }
+    .page {
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+    }
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+    .flyer {
+      display: flex;
+      flex-direction: column;
+      width: 1080px;
+      min-height: 1920px;
+    }
+    .hero {
+      position: relative;
+      flex: none;
+      padding: 40px 44px 32px;
+      color: #fff;
+      background: #004182;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(0,65,130,.92) 0%, rgba(0,65,130,.5) 100%),
+        url("photos/sekadai-beach-banner.jpg") center / cover;
+      z-index: 0;
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      margin-bottom: 20px;
+    }
+    .hero .lead {
+      font-size: 26px;
+      line-height: 1.55;
+      opacity: .95;
+      max-width: 920px;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.18);
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .body {
+      flex: none;
+      padding: 28px 44px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .why {
+      padding: 22px 24px;
+      border-left: 5px solid #0a66c2;
+      background: #fff;
+      border-radius: 12px;
+    }
+    .why h2 {
+      font-size: 24px;
+      color: #004182;
+      margin-bottom: 12px;
+    }
+    .why p {
+      font-size: 22px;
+      line-height: 1.55;
+      color: #5e5e5e;
+    }
+    .events { display: grid; gap: 18px; }
+    .event {
+      padding: 24px 26px;
+      background: #fff;
+      border-radius: 14px;
+      border: 2px solid rgba(10,102,194,.2);
+    }
+    .event--highlight {
+      border-color: #0a66c2;
+      background: linear-gradient(135deg, #eef3f8 0%, #fff 60%);
+    }
+    .event__step {
+      font-size: 16px;
+      font-weight: 800;
+      color: #1a8ccc;
+      letter-spacing: .1em;
+      margin-bottom: 8px;
+    }
+    .event h3 {
+      font-size: 30px;
+      color: #004182;
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+    .event p {
+      font-size: 21px;
+      line-height: 1.5;
+      color: #444;
+    }
+    .event .meta {
+      margin-top: 12px;
+      font-size: 22px;
+      font-weight: 800;
+      color: #0a66c2;
+    }
+    .event__photo {
+      margin-top: 16px;
+      padding: 10px;
+      border-radius: 12px;
+      background: #eef3f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .event__photo img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 220px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .event__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .event__links a {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: #0a66c2;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .event__page2-hint {
+      margin-top: 12px;
+      font-size: 18px;
+      line-height: 1.45;
+      color: #444;
+    }
+    .office-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 592px 443px 443px 442px;
+      gap: 0;
+      width: 1080px;
+      height: 1920px;
+      padding: 0;
+      background: #0b1419;
+      box-sizing: border-box;
+    }
+    .office-gallery__cell {
+      min-height: 0;
+      overflow: hidden;
+    }
+    .office-gallery__cell--landscape {
+      grid-column: 1 / -1;
+      background: #0b1419;
+    }
+    .office-gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .office-gallery__cell--landscape img {
+      object-fit: contain;
+      object-position: center;
+    }
+    .navigator {
+      padding: 22px 24px;
+      background: #fff;
+      border-radius: 14px;
+      border: 2px solid rgba(10,102,194,.25);
+      box-shadow: 0 8px 24px rgba(0,65,130,.08);
+    }
+    .navigator__card {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .navigator__photo {
+      flex: none;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid #0a66c2;
+      background: #eef3f8;
+    }
+    .navigator h2 {
+      font-size: 26px;
+      color: #004182;
+      margin-bottom: 8px;
+    }
+    .navigator p {
+      font-size: 19px;
+      line-height: 1.5;
+      color: #5e5e5e;
+      margin-bottom: 12px;
+    }
+    .navigator a {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #0a66c2;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .cta {
+      padding: 22px 26px;
+      background: #0a66c2;
+      color: #fff;
+      border-radius: 14px;
+      text-align: center;
+    }
+    .cta p {
+      font-size: 20px;
+      margin-bottom: 10px;
+      opacity: .9;
+    }
+    .cta__button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 16px 28px;
+      border-radius: 999px;
+      background: #fff;
+      color: #0a66c2;
+      font-size: 24px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .cta__link {
+      display: block;
+      margin-top: 14px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    .cta__sub {
+      display: block;
+      margin-top: 12px;
+      font-size: 17px;
+      opacity: .9;
+    }
+    .cta__sub a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .foot {
+      text-align: center;
+      font-size: 17px;
+      color: #5e5e5e;
+      padding-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+  <article class="flyer">
+    <header class="hero">
+      <p class="brand">世界一周大学 × LinkedIn</p>
+      <h1>旅と挑戦を<br>次の出会いへ</h1>
+      <p class="lead">
+        セカダイで得た経験を、就活・仕事・仲間につなげる。
+        第6期生はもちろん、過去の期を含む関係者のみなさん、大歓迎です。
+      </p>
+      <span class="badge">参加無料 · 初めての方OK</span>
+    </header>
+
+    <div class="body">
+      <section class="why">
+        <h2>なぜ LinkedIn？</h2>
+        <p>
+          履歴書に載らない旅や挑戦を、社会に伝わる形で残せる。
+          大学生は就活の武器に、社会人はビジネスやグローバルな機会の入口に。
+        </p>
+      </section>
+
+      <section class="events">
+        <article class="event">
+          <p class="event__step">STEP 1 · 準備編</p>
+          <h3>オンライン事前説明会</h3>
+          <p class="meta">10月18日（日）20:00–21:00 · Zoom</p>
+          <p>LinkedInの基本を知り、みんなでアカウント作成。10/26へつながる1時間。</p>
+        </article>
+        <article class="event event--highlight">
+          <p class="event__step">STEP 2 · 体験編</p>
+          <h3>LinkedIn Japanオフィス講座</h3>
+          <p class="meta">10月26日（月）19:30–21:30 · 六本木</p>
+          <p>
+            LinkedIn Japanオフィス（六本木）で学ぶ特別な2時間。共演予定。
+            参加条件：LinkedInアカウント作成済み（18日の説明会で一緒に作れます）
+          </p>
+          <div class="event__links">
+            <a href="https://www.linkedin.com/in/raiki-yamamoto-047106277/">山元ライキ LinkedIn</a>
+            <a href="https://www.linkedin.com/in/makoto1118/">石坂誠さん LinkedIn</a>
+          </div>
+          <p class="event__page2-hint">LinkedIn Japanオフィスの写真 → このチラシ<strong>2ページ目</strong></p>
+        </article>
+      </section>
+
+      <section class="navigator">
+        <div class="navigator__card">
+          <img class="navigator__photo" src="photos/linkedin-hq-raiki.png" alt="山元ライキ">
+          <div>
+            <h2>案内：山元ライキ</h2>
+            <p>世界一周大学プロデューサー。LinkedInで一緒に最初の一歩から。</p>
+            <a href="https://www.linkedin.com/in/raiki-yamamoto-047106277/">LinkedInプロフィール</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <p>まずは STEP 1 から申し込み</p>
+        <a class="cta__button" href="https://tally.so/r/ob491V">タップして申し込む</a>
+        <a class="cta__link" href="https://tally.so/r/ob491V">https://tally.so/r/ob491V</a>
+        <span class="cta__sub">詳細LP：<a href="https://raiki2528.github.io/sekadai.linkedin.event/">raiki2528.github.io/sekadai.linkedin.event</a></span>
+      </section>
+
+      <p class="foot">世界一周大学 × LinkedIn · Navigator Raiki Yamamoto</p>
+    </div>
+  </article>
+  </div>
+
+  <div class="page" aria-label="LinkedIn Japanオフィスの様子">
+    <div class="office-gallery">
+      <div class="office-gallery__cell office-gallery__cell--landscape">
+        <img src="photos/linkedin-japan-midtown-exterior.jpg" alt="">
+      </div>
+      <div class="office-gallery__cell">
+        <img src="photos/linkedin-japan-office-event-space.jpg" alt="">
+      </div>
+      <div class="office-gallery__cell">
+        <img src="photos/linkedin-japan-office-visit.jpg" alt="">
+      </div>
+      <div class="office-gallery__cell">
+        <img src="photos/linkedin-japan-office-focus-booths.png" alt="">
+      </div>
+      <div class="office-gallery__cell">
+        <img src="photos/linkedin-japan-office-snack-drawer.png" alt="">
+      </div>
+      <div class="office-gallery__cell">
+        <img src="photos/linkedin-japan-office-snack-dispensers.png" alt="">
+      </div>
+      <div class="office-gallery__cell">
+        <img src="photos/linkedin-japan-office-logo-wall.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

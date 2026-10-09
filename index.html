@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0a66c2">
-  <meta name="description" content="世界一周大学に関わるみなさんへ。LinkedInを知り、旅や挑戦を次の出会いにつなげるオンライン説明会。2026年10月15日21:00開催。">
+  <meta name="description" content="世界一周大学に関わるみなさんへ。LinkedInを知り、旅や挑戦を次の出会いにつなげるオンライン説明会。2026年10月18日20:00開催。">
   <meta property="og:title" content="旅と挑戦を、次の出会いへ。｜世界一周大学 × LinkedIn">
   <meta property="og:description" content="LinkedInを初めて知る人のための、1時間のオンライン説明会。10月26日のLinkedInオフィスイベントへつながります。">
   <meta property="og:type" content="website">
@@ -399,6 +399,39 @@
       font-size: 14px;
       line-height: 1.6;
     }
+    .office-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 18px;
+      max-width: 360px;
+    }
+    .office-gallery figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      background: var(--linkedin-bg);
+    }
+    .office-gallery img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+    }
+    .office-gallery figcaption {
+      padding: 8px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--linkedin-dark);
+      line-height: 1.35;
+    }
+    .office-tour-link {
+      margin-top: 14px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+    .office-tour-link a { font-weight: 700; }
 
     .adventure { padding-bottom: 30px; background: var(--paper); }
     .adventure__head {
@@ -453,6 +486,15 @@
       text-align: center;
     }
     .form-shell__fallback a { color: var(--linkedin); font-weight: 700; }
+    .form-shell__open {
+      display: flex;
+      width: 100%;
+      min-height: 52px;
+      margin-bottom: 16px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
 
     .faq { background: var(--paper); }
     details { padding: 22px 0; border-bottom: 1px solid var(--line); }
@@ -491,6 +533,7 @@
       .experience__story { grid-template-columns: .85fr 1.15fr; gap: 40px; }
       .office-feature { max-width: 440px; max-height: 280px; aspect-ratio: 16 / 10; }
       .event__office .office-feature { max-width: 440px; max-height: 280px; }
+      .office-gallery { max-width: 100%; grid-template-columns: repeat(3, 1fr); }
       .brand-mini__grid { grid-template-columns: 1fr repeat(3, 1fr); gap: 16px; }
       .event__grid { grid-template-columns: 1.2fr .8fr; align-items: end; }
       .event__date {
@@ -532,14 +575,14 @@
     <section class="hero">
       <div class="wrap hero__content">
         <div class="hero__copy">
-          <p class="eyebrow">Online orientation 2026.10.15</p>
+          <p class="eyebrow">Online orientation 2026.10.18</p>
           <h1>旅と挑戦を次の出会いへ</h1>
           <p class="lead">
             世界一周大学で得た経験は、まだ見ぬ人や仕事につながる。
             はじめてのLinkedInを、みんなで一緒に始める1時間です。
           </p>
           <ul class="hero__meta">
-            <li>10月15日（木）21:00–22:00</li>
+            <li>10月18日（日）20:00–21:00</li>
             <li>Zoom</li>
             <li>参加無料</li>
           </ul>
@@ -618,14 +661,14 @@
         </figure>
         <div>
           <p class="eyebrow">Two connected events</p>
-          <h2 class="title-plain">10月15日は冒険の準備編</h2>
+          <h2 class="title-plain">10月18日は冒険の準備編</h2>
           <p class="lead">
             まずオンラインでLinkedInを知り、アカウントを作る。
             その先には、10月26日のLinkedInオフィスイベントが待っています。
           </p>
           <div class="path">
             <div class="path__item">
-              <div class="path__date">10.15</div>
+              <div class="path__date">10.18</div>
               <div>
                 <h3>オンライン事前説明会</h3>
                 <p>LinkedInの基本を知り、メールアドレスでアカウントを作成します。</p>
@@ -795,32 +838,32 @@
         </h2>
         <div class="agenda__list">
           <div class="agenda__item">
-            <span class="agenda__time">21:00</span>
+            <span class="agenda__time">20:00</span>
             <h3>LinkedInって、どんなSNS？</h3>
             <span class="agenda__minutes">10 min</span>
           </div>
           <div class="agenda__item">
-            <span class="agenda__time">21:10</span>
+            <span class="agenda__time">20:10</span>
             <h3>本社訪問と、つながりから生まれた機会</h3>
             <span class="agenda__minutes">12 min</span>
           </div>
           <div class="agenda__item">
-            <span class="agenda__time">21:22</span>
+            <span class="agenda__time">20:22</span>
             <h3>自分をブランド化するプロフィールの3要素</h3>
             <span class="agenda__minutes">8 min</span>
           </div>
           <div class="agenda__item">
-            <span class="agenda__time">21:30</span>
+            <span class="agenda__time">20:30</span>
             <h3>10月26日 LinkedIn Japanオフィス（石坂さん×Raiki共演）</h3>
             <span class="agenda__minutes">8 min</span>
           </div>
           <div class="agenda__item">
-            <span class="agenda__time">21:38</span>
+            <span class="agenda__time">20:38</span>
             <h3>みんなでアカウント登録・最初の設定</h3>
             <span class="agenda__minutes">17 min</span>
           </div>
           <div class="agenda__item">
-            <span class="agenda__time">21:55</span>
+            <span class="agenda__time">20:55</span>
             <h3>Q&amp;Aと次の一歩</h3>
             <span class="agenda__minutes">5 min</span>
           </div>
@@ -863,6 +906,37 @@
           </figure>
           <p class="event__office-caption">
             六本木・東京ミッドタウン。木組みと金継ぎがモチーフの LinkedIn Japan オフィス。10月26日はここで一緒に学びます。
+          </p>
+          <div class="office-gallery">
+            <figure>
+              <img src="photos/linkedin-japan-midtown-exterior.jpg" alt="LinkedIn Japanオフィス内（ロゴ・共用スペース）" loading="lazy">
+              <figcaption>オフィス内</figcaption>
+            </figure>
+            <figure>
+              <img src="photos/linkedin-japan-office-event-space.jpg" alt="LinkedIn Japanオフィスのイベントスペース" loading="lazy">
+              <figcaption>イベントスペース</figcaption>
+            </figure>
+            <figure>
+              <img src="photos/linkedin-japan-office-focus-booths.png" alt="LinkedIn Japanオフィスのフォーカスブース" loading="lazy">
+              <figcaption>フォーカスブース</figcaption>
+            </figure>
+            <figure>
+              <img src="photos/linkedin-japan-office-snack-dispensers.png" alt="LinkedIn Japanオフィスのスナックバー" loading="lazy">
+              <figcaption>スナックバー</figcaption>
+            </figure>
+            <figure>
+              <img src="photos/linkedin-japan-office-snack-drawer.png" alt="LinkedIn Japanオフィスのおやつコーナー" loading="lazy">
+              <figcaption>おやつコーナー</figcaption>
+            </figure>
+            <figure>
+              <img src="photos/linkedin-japan-office-logo-wall.png" alt="LinkedIn Japanオフィス受付のLinkedInロゴ" loading="lazy">
+              <figcaption>LinkedInロゴ</figcaption>
+            </figure>
+          </div>
+          <p class="office-tour-link">
+            オフィス内の様子は
+            <a href="https://micetimes.jp/officetour-linkedin/" target="_blank" rel="noopener noreferrer">MICE TIMES「リンクトイン・ジャパンでMICEを探る」</a>
+            （2024年取材）でも紹介されています。
           </p>
         </div>
       </div>
@@ -910,8 +984,9 @@
           </div>
         </div>
         <div class="form-shell">
+          <a class="button form-shell__open" href="https://tally.so/r/ob491V" target="_blank" rel="noopener noreferrer">申込フォームを開く（Tally）</a>
           <iframe
-            data-tally-src="https://tally.so/embed/ob491V?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            src="https://tally.so/embed/ob491V?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
             loading="lazy"
             width="100%"
             height="520"
@@ -921,8 +996,8 @@
             title="旅と挑戦を、次の出会いへ。｜世界一周大学 × LinkedIn"
           ></iframe>
           <p class="form-shell__fallback">
-            フォームが表示されない場合は
-            <a href="https://tally.so/r/ob491V" target="_blank" rel="noopener noreferrer">こちらから申し込む ↗</a>
+            埋め込みが表示されない場合：
+            <a href="https://tally.so/r/ob491V" target="_blank" rel="noopener noreferrer">https://tally.so/r/ob491V</a>
           </p>
         </div>
       </div>
@@ -954,7 +1029,7 @@
         </details>
         <details>
           <summary>10月26日のイベントだけ参加できますか？</summary>
-          <p>10月26日の参加にはLinkedInアカウントが必要です。初めての方は、10月15日の説明会で一緒に登録することをおすすめします。</p>
+          <p>10月26日の参加にはLinkedInアカウントが必要です。初めての方は、10月18日の説明会で一緒に登録することをおすすめします。</p>
         </details>
       </div>
     </section>
