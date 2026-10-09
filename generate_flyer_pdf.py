@@ -5,7 +5,7 @@ from pathlib import Path
 
 DIR = Path(__file__).resolve().parent
 HTML = DIR / "flyer.html"
-PDF = DIR / "世界一周大学×LinkedIn チラシ 2026-10-18.pdf"
+PDF = DIR / "世界一周大学×LinkedIn チラシ 2026-10-15.pdf"
 CHROME = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 
